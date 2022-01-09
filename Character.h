@@ -72,3 +72,9 @@ private:
     
     void attackInternal(Character& other);
 };
+
+
+
+
+
+
