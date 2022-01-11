@@ -12,4 +12,3 @@ private:
     const std::string name;
 };
 
-
