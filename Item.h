@@ -5,10 +5,9 @@
 struct Character;
 struct Item
 {
-    Item(const std::string& name_, int effect ) : name(name_), boost(effect) { }
+    Item(const std::string& name_, int effect );
     virtual void use(Character*) = 0;
-    virtual ~Item() { }
-
+    virtual ~Item();
     inline int getBoost() const { return boost; }
     inline const std::string& getName() { return name; }
 private:
