@@ -10,10 +10,10 @@ struct DragonSlayer : Character
     const std::string& getName() override;
     std::string getStats() override;
     void attack(Character& other) override;
-    std::unique_ptr<AttackItem> attackItem;
 
 private:
     const std::string name;
+    std::unique_ptr<AttackItem> attackItem = std::make_unique<AttackItem>();
 };
 
 
