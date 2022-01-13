@@ -86,7 +86,7 @@ int Character::takeDamage(int damage)
     return hitPoints;
 }
 
-void updateStats(int &curStat, int &intStat)
+void updateStats(int& curStat, int& intStat)
 {
     if(curStat < intStat)
     {
