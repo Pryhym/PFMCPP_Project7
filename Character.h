@@ -35,11 +35,24 @@ struct Character
     const std::vector<std::unique_ptr<Item>>& getHelpfulItems() const { return helpfulItems; }
     const std::vector<std::unique_ptr<Item>>& getDefensiveItems() const { return defensiveItems; }
     
-    void boostArmor( double amount );
+    void boostArmor( double amount )
+    {
+        armor += amount;
+        std::cout << getName() << "'s armor level has been boosted to " << armor << std::endl;
+    }
     
-    void boostHitPoints( double amount );
+    void boostHitPoints( double amount )
+    {
+        hitPoints += amount;
+        std::cout << getName() << "'s hit point level has been boosted to " << hitPoints << std::endl;
+    }
     
-    void boostAttackDamage( double amount );
+    void boostAttackDamage( double amount )
+    {
+        attackDamage += amount;
+        std::cout << getName() << "'s attack damage level has been boosted to " << attackDamage << std::endl;
+    }
+
 
     void printStats();
 protected:
